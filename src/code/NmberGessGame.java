@@ -6,9 +6,9 @@
  * ----------------------------------------------------------------------------------------------------------------------------
  * Project Name   : Number Guessing Game
  * File Name      : NumberGuessGame.java
- * Author         : [Your Name]
- * Date           : [Enter Date]
- * Version        : 1.0
+ * Author         : 
+ * Date           : 
+ * Version        : 
  *
  * Description    :
  * This program implements a number guessing game where the system generates

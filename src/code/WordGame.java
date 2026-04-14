@@ -6,9 +6,9 @@
  * ----------------------------------------------------------------------------------------------------------------------------
  * Project Name   : Word Game (Mad Libs Style)
  * File Name      : WordGame.java
- * Author         : [Your Name]
- * Date           : [Enter Date]
- * Version        : 1.0
+ * Author         : 
+ * Date           : 
+ * Version        : 
  *
  * Description    :
  * This program is a simple word-based game where the user inputs different types of words

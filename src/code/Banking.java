@@ -6,9 +6,9 @@
  * ----------------------------------------------------------------------------------------------------------------------------
  * Project Name   : Banking System (Console-Based)
  * File Name      : Banking.java
- * Author         : [Your Name]
- * Date           : [Enter Date]
- * Version        : 1.0
+ * Author         : 
+ * Date           : 
+ * Version        : 
  *
  * Description    :
  * This program simulates a simple banking system. It allows the user to:

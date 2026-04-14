@@ -6,9 +6,9 @@
  * ----------------------------------------------------------------------------------------------------------------------------
  * Project Name   : Quiz Game (Console-Based)
  * File Name      : QuizGame.java
- * Author         : [Your Name]
- * Date           : [Enter Date]
- * Version        : 1.0
+ * Author         : 
+ * Date           : 
+ * Version        : 
  *
  * Description    :
  * This program implements a simple console-based quiz game.

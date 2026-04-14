@@ -6,9 +6,9 @@
  * ----------------------------------------------------------------------------------------------------------------------------
  * Project Name   : Dice Roller (Console-Based)
  * File Name      : DiceRoller.java
- * Author         : [Your Name]
- * Date           : [Enter Date]
- * Version        : 1.0
+ * Author         :
+ * Date           :
+ * Version        : 
  *
  * Description    :
  * This program simulates rolling one or more dice. The user specifies the number of dice,

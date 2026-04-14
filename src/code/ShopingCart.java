@@ -6,9 +6,9 @@
  * ----------------------------------------------------------------------------------------------------------------------------
  * Project Name   : Shopping Cart (Console-Based)
  * File Name      : ShoppingCart.java
- * Author         : [Your Name]
- * Date           : [Enter Date]
- * Version        : 1.0
+ * Author         : 
+ * Date           : 
+ * Version        : 
  *
  * Description    :
  * This program simulates a simple shopping cart system. The user enters product details
