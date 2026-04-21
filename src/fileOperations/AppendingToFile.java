@@ -26,7 +26,7 @@ public class AppendingToFile {
             // Create a FileWriter object with append mode enabled (true).
             // If the file does not exist, it will be created.
             // If it exists, new content will be added at the end.
-            FileWriter writer = new FileWriter("Simple.txt", true);
+            FileWriter writer = new FileWriter("Simple1.txt", true);
 
             // Append a line of text to the file
             writer.write("This line of text is appended to the existing file \n");

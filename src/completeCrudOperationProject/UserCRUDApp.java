@@ -98,11 +98,11 @@ public class UserCRUDApp {
             System.out.println("4. Delete User");
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
-            int choice = sc.nextInt();
-            sc.nextLine(); // consume newline
+            String choice = sc.nextLine();
+//            sc.nextLine(); // consume newline
 
             switch (choice) {
-                case 1:
+                case "INSERT":
                     System.out.print("Enter name: ");
                     String name = sc.nextLine();
                     System.out.print("Enter email: ");
@@ -111,10 +111,10 @@ public class UserCRUDApp {
                     int age = sc.nextInt();
                     insertUser(name, email, age);
                     break;
-                case 2:
+                case "View":
                     readUsers();
                     break;
-                case 3:
+                case "Update":
                     System.out.print("Enter user ID to update: ");
                     int idUpdate = sc.nextInt();
                     sc.nextLine();
@@ -122,15 +122,15 @@ public class UserCRUDApp {
                     String newEmail = sc.nextLine();
                     updateUserEmail(idUpdate, newEmail);
                     break;
-                case 4:
+                case "Delete":
                     System.out.print("Enter user ID to delete: ");
                     int idDelete = sc.nextInt();
                     deleteUser(idDelete);
                     break;
-                case 5:
+                case "Exit":
                     System.out.println("Exiting...");
-                    sc.close();
                     System.exit(0);
+                    sc.close();
                 default:
                     System.out.println("Invalid choice!");
             }
