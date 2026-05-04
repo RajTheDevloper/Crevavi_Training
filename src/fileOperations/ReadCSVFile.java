@@ -23,7 +23,7 @@ public class ReadCSVFile {
      */
     public static void main(String[] args) {
         // Use try-with-resources to ensure BufferedReader is closed automatically
-        try (BufferedReader br = new BufferedReader(new FileReader("Simple.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\Simple.csv"))) {
             String line;
             String splitBy = "\n"; // delimiter used for splitting (currently newline)
 

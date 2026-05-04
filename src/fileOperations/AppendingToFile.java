@@ -7,8 +7,8 @@
  */
 package fileOperations;
 
-import java.io.IOException;
 import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * A simple program to append text into "Simple.txt".
@@ -21,12 +21,15 @@ public class AppendingToFile {
      *
      * @param args command-line arguments (not used in this program)
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+    	
+    
+    	
         try {
             // Create a FileWriter object with append mode enabled (true).
             // If the file does not exist, it will be created.
             // If it exists, new content will be added at the end.
-            FileWriter writer = new FileWriter("Simple1.txt", true);
+            FileWriter writer = new FileWriter("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\Simple.txt", true);
 
             // Append a line of text to the file
             writer.write("This line of text is appended to the existing file \n");
@@ -43,4 +46,7 @@ public class AppendingToFile {
             e.printStackTrace(); // Print detailed error information
         }
     }
-}
+    	
+    
+    }
+

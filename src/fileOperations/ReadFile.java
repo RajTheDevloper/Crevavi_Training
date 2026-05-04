@@ -30,7 +30,7 @@ public class ReadFile {
     public static void main(String[] args) {
         try {
             // Create a File object representing "Simple.txt"
-            File file = new File("Simple.txt");
+            File file = new File("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\Simple.txt");
 
             // Create a Scanner to read the file
             Scanner reader = new Scanner(file);

@@ -60,13 +60,15 @@ public class Calculator {
     public static void main(String[] args) {
 
         // Scanner object for reading user input
-        Scanner in = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
 
         // Variables to store numbers and operator
         double num1;     // First number
         double num2;     // Second number
         char operator;   // Operator (+, -, *, /, ^)
 
+        while(true) {
         // Prompt user for first number
         System.out.println("Enter the first number:");
         num1 = in.nextDouble();
@@ -101,8 +103,8 @@ public class Calculator {
 
             default -> System.out.println("Invalid operator!");
         }
-
-        // Close scanner to prevent resource leak
-        in.close();
+        
+        }
+        
     }
 }

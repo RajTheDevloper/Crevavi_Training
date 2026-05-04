@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadExcelFileExtended {
 
     public static void main(String[] args) {
-        try (FileInputStream fis = new FileInputStream("SampleData.xlsx");
+        try (FileInputStream fis = new FileInputStream("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\SampleData.xlsx");
              Workbook wb = new XSSFWorkbook(fis)) {
 
             // Get the third sheet (index 2)

@@ -26,7 +26,7 @@ public class ReadExcelFile {
      */
     public static void main(String[] args) {
         // Use try-with-resources to ensure FileInputStream and Workbook are closed automatically
-        try (FileInputStream fis = new FileInputStream("SampleData.xlsx");
+        try (FileInputStream fis = new FileInputStream("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\SampleData.xlsx");
         //for xlsx(2007+) file will use XSSFWorkbook and for xls(-2003) file will use HSSFWorkbook
              Workbook wb = new XSSFWorkbook(fis)) {
 

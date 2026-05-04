@@ -22,7 +22,7 @@ public class CreateFile {
      */
     public static void main(String[] args) {
         // Create a File object representing "Simple.txt"
-        File file = new File("Simple.txt");
+        File file = new File("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\Simple.txt");
 
         try {
             // Attempt to create the file

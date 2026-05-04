@@ -26,7 +26,7 @@ public class WriteToFile {
             // Create a FileWriter object to write to "Simple.txt"
             // If the file does not exist, it will be created.
             // If it exists, its contents will be overwritten.
-            FileWriter writer = new FileWriter("Simple.txt");
+            FileWriter writer = new FileWriter("C:\\Users\\Admin\\git\\Crevavi_Training\\files\\Simple.txt");
 
             // Write the first line of text into the file
             writer.write("This is a simple text added to the Simple.txt file!\n");
