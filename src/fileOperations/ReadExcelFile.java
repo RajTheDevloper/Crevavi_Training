@@ -9,6 +9,7 @@ package fileOperations;
 
 import java.io.FileInputStream;
 
+import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -16,7 +17,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  * A simple program to read text from "SampleData.xlsx" using Apache POI.
  */
 public class ReadExcelFile {
-
+	
     /**
      * The main method is the entry point of the program.
      * It reads the third sheet (index 2) of "SampleData.xlsx"
@@ -31,7 +32,7 @@ public class ReadExcelFile {
              Workbook wb = new XSSFWorkbook(fis)) {
 
             // Get the third sheet (index starts at 0, so 2 = third sheet)
-            Sheet sheet = wb.getSheetAt(0);
+            org.apache.poi.ss.usermodel.Sheet sheet = wb.getSheetAt(0);
 
             // Loop through each row in the sheet
             for (Row row : sheet) {
