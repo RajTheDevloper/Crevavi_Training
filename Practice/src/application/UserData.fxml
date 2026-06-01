@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserDataController">
+   <children>
+      <Label alignment="CENTER" layoutX="35.0" layoutY="44.0" prefHeight="17.0" prefWidth="83.0" text="Name" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="72.0" prefHeight="17.0" prefWidth="83.0" text="Age" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="105.0" prefHeight="17.0" prefWidth="83.0" text="Date of Birth" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="143.0" prefHeight="17.0" prefWidth="83.0" text="Gender" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="180.0" prefHeight="17.0" prefWidth="83.0" text="Branch" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="210.0" prefHeight="17.0" prefWidth="83.0" text="Skills" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="268.0" prefHeight="17.0" prefWidth="83.0" text="Location" />
+      <TextField layoutX="118.0" layoutY="40.0" />
+      <DatePicker layoutX="118.0" layoutY="101.0" />
+      <TextField layoutX="118.0" layoutY="68.0" />
+      <RadioButton layoutX="118.0" layoutY="143.0" mnemonicParsing="false" selected="true" text="Male" />
+      <RadioButton layoutX="180.0" layoutY="143.0" mnemonicParsing="false" text="Female" />
+      <ChoiceBox fx:id="branchChoiceBox" layoutX="118.0" layoutY="176.0" prefWidth="150.0" />
+      <CheckBox layoutX="219.0" layoutY="210.0" mnemonicParsing="false" text="SQL" />
+      <CheckBox layoutX="323.0" layoutY="210.0" mnemonicParsing="false" text="HTML" />
+      <CheckBox layoutX="118.0" layoutY="238.0" mnemonicParsing="false" text="CSS" />
+      <CheckBox layoutX="219.0" layoutY="238.0" mnemonicParsing="false" text="JavaScript" />
+      <CheckBox layoutX="323.0" layoutY="238.0" mnemonicParsing="false" text="javaFX" />
+      <ChoiceBox fx:id="locationChoiceBox" layoutX="118.0" layoutY="264.0" prefWidth="150.0" />
+      <Button fx:id="myButton1" layoutX="57.0" layoutY="321.0" mnemonicParsing="false" onAction="#Scene2Two" prefHeight="25.0" prefWidth="109.0" text="Button" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.AppController">
+
+    <center>
+        <TabPane fx:id="tabPane">
+            <tabs>
+                <Tab text="Data Entry" closable="false">
+                    <VBox spacing="8">
+                        <padding>
+                            <Insets top="16" right="16" bottom="16" left="16"/>
+                        </padding>
+                        <GridPane hgap="12" vgap="12">
+                            <padding>
+                                <Insets top="16" right="16" bottom="16" left="16"/>
+                            </padding>
+                            <Label text="Record Type" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <ComboBox fx:id="typeBox" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                            <Label text="Name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                            <TextField fx:id="nameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                            <Label text="Age" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                            <TextField fx:id="ageField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                            <Label text="Gender" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                            <HBox spacing="12" GridPane.rowIndex="3" GridPane.columnIndex="1">
+                                <RadioButton text="Male" toggleGroup="$genderGroup"/>
+                                <RadioButton text="Female" toggleGroup="$genderGroup"/>
+                                <RadioButton text="Other" toggleGroup="$genderGroup"/>
+                            </HBox>
+
+                            <Label text="Department" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                            <ComboBox fx:id="departmentBox" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                            <Label text="Hobbies / Skills" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                            <HBox spacing="12" GridPane.rowIndex="5" GridPane.columnIndex="1">
+                                <CheckBox fx:id="hobbyJava" text="Java"/>
+                                <CheckBox fx:id="hobbySql" text="SQL"/>
+                                <CheckBox fx:id="hobbyDesign" text="Design"/>
+                            </HBox>
+
+                            <Label text="Email" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                            <TextField fx:id="emailField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+                            <Label text="Phone" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                            <TextField fx:id="phoneField" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                            <Label text="Address" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+                            <TextArea fx:id="addressArea" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+                        </GridPane>
+
+                        <HBox spacing="12" alignment="CENTER_LEFT">
+                            <padding>
+                                <Insets top="12" right="12" bottom="12" left="12"/>
+                            </padding>
+                            <Button text="Save Record" onAction="#saveRecord"/>
+                            <Button fx:id="updateButton" text="Update Record" onAction="#updateRecord" disable="true"/>
+                            <Button text="Clear" onAction="#clearForm"/>
+                            <Button text="View Saved Records" onAction="#switchToListTab"/>
+                        </HBox>
+                    </VBox>
+                </Tab>
+                <Tab text="Saved Records" closable="false">
+                    <VBox spacing="8">
+                        <padding>
+                            <Insets top="16" right="16" bottom="16" left="16"/>
+                        </padding>
+                        <HBox spacing="12">
+                            <padding>
+                                <Insets top="12" right="12" bottom="12" left="12"/>
+                            </padding>
+                            <Button text="Refresh" onAction="#refreshTable"/>
+                            <Button text="Export to CSV" onAction="#exportCsv"/>
+                            <Button text="Export to Excel" onAction="#exportExcel"/>
+                            <Button text="Import File" onAction="#importFile"/>
+                            <Button fx:id= "editSelectedButton" text="Edit Selected" onAction="#editSelectedRecord" disable="true"/>
+                            <Button fx:id="deleteSelectedButton" text="Delete Selected" onAction="#deleteSelectedRecord" disable="true"/>
+                        </HBox>
+                        <TableView fx:id="tableView" prefHeight="460"/>
+                    </VBox>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

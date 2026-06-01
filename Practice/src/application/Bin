@@ -1,0 +1,66 @@
+package application;
+
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.scene.shape.Line;
+import javafx.scene.text.*;
+
+
+public class Main extends Application{
+	
+	//Overriding the unimplemented method start() of the application class. and we have to pass the sage as an argument to this method.
+	//@param satge
+	@Override
+	public void start(Stage primaryStage) {
+		
+		try {
+			
+			
+			Line line = new Line();
+			line.setStartX(100.0);
+			line.setStartY(100.0);
+			line.setEndX(500.0);
+			line.setEndY(100.0);
+			
+			Text text = new Text();
+			text.setX(150);
+			text.setY(90);
+			text.setText("Hello world!!!");
+			text.setFont(new Font(45));
+			text.setFill(Color.RED);
+			
+			
+			//creation of the root node (there are three root nodes and we can select any of the node as root node and they are Group, Region, WebView) and these are all belongs to javafx.scene class
+			Group root = new Group();
+			root.getChildren().add(line);
+			root.getChildren().add(text);
+			
+			//adding the root node to the scene.
+			//@param (root node, Height, weight)
+			Scene scene = new Scene(root,600, 600);
+			//adding the scene to the stage  
+			primaryStage.setScene(scene);
+			//set the title for the stage
+			primaryStage.setTitle("Basic");
+			//display the content of the stage
+			primaryStage.show();
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		//static method no need of the object and class name to invocation
+		Application.launch(args);
+	}
+}
+
+
+
